@@ -1,6 +1,10 @@
 function getApi() {
-    var requestApi = "https://imgflip.com/api"
-    fetch(requestApi).then(function (response) {
+
+    fetch("https://imgflip.com/api", {
+      mode: 'no-cors'
+    })
+    
+    .then(function (response) {
       return response.json();
       
     })
@@ -9,3 +13,4 @@ function getApi() {
     });
   
   }
+  getApi();
