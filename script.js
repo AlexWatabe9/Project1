@@ -11,23 +11,43 @@
 //init to call multiple 
 
 
-var url = "http://numbersapi.com/number/type";
+// var url = "http://numbersapi.com/number/type";
+
+
 var random = document.getElementById("random");
 
-fetch('http://numbersapi.com/number/trivia')
-    .then(function (response) {
-        console.log(response);
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-    })
-    .catch(function (error) {
-        console.error(error);
-    });
+function getApi() {
+    var url = "http://numbersapi.com/42/trivia";
+
+    fetch(url)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+        })
+        .catch(function (error) {
+            console.error(error);
+        });
+}
+
+getApi();
 
 
-getApi()
+// fetch(url)
+//     .then(function (response) {
+//         console.log(response);
+//         return response.json();
+//     })
+//     .then(function (data) {
+//         console.log(data);
+//     })
+//     .catch(function (error) {
+//         console.error(error);
+//     });
+
+
+
 // factButton.addEventListener("click", async () => {
 //   var response = await fetch("https://go-apod.herokuapp.com/apod");
 //   var fact = await response.text();
