@@ -14,24 +14,24 @@
 // var url = "http://numbersapi.com/number/type";
 
 
-var random = document.getElementById("random");
+// var random = document.getElementById("random");
 
-function getApi() {
-    var url = "http://numbersapi.com/42/trivia";
+// function getApi() {
+//     var url = "http://numbersapi.com/42/trivia";
 
-    fetch(url)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data);
-        })
-        .catch(function (error) {
-            console.error(error);
-        });
-}
+//     fetch(url)
+//         .then(function (response) {
+//             return response.json();
+//         })
+//         .then(function (data) {
+//             console.log(data);
+//         })
+//         .catch(function (error) {
+//             console.error(error);
+//         });
+// }
 
-getApi();
+// getApi();
 
 
 // fetch(url)
