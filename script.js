@@ -82,5 +82,9 @@ fetchJoke()
   console.error(error);
 });
 
+<<<<<<< HEAD
 random.addEventListener('click, fetchJoke');
 // hello 
+=======
+random.addEventListener('click, fetchJoke');
+>>>>>>> 9d3d18ceb917cbf41661d1144f7a7978cc44444c
