@@ -57,13 +57,13 @@ var random = document.getElementById("random-button")
 
 async function fetchJoke() {
     // API endpoint URL
-    const url = "https://sv443.net/jokeapi/v2/joke/Any";
+    var url = "https://sv443.net/jokeapi/v2/joke/Any";
   
     // Make API request
-    const response = await fetch(url);
+    var response = await fetch(url);
   
     // Get the JSON response
-    const json_response = await response.json();
+    var json_response = await response.json();
   
     // Return the setup and punchline of the joke
     if (json_response["type"] === "twopart") {
